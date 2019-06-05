@@ -90,26 +90,27 @@ $(document).ready(function() {
       $('#display').append("0");
       equation.push(0);
     });
-    $(".buttonadd").click(function(){
+    $(".form-group").click(function(){
       console.log("Button clicks");
-      $('#display').append("+");
+      var operator =$("#time").val();
+      $('#display').append(operator);
       equation.push("+");
     });
-    $(".buttonsub").click(function(){
-      console.log("Button clicks");
-      $('#display').append("-");
-      equation.push("-");
-    });
-    $(".buttonmultiply").click(function(){
-      console.log("Button clicks");
-      $('#display').append("*");
-      equation.push("*");
-    });
-    $(".buttondivide").click(function(){
-      console.log("Button clicks");
-      $('#display').append("/");
-      equation.push("/");
-    });
+      // $(".buttonsub").click(function(){
+      //   console.log("Button clicks");
+      //   $('#display').append("-");
+      //   equation.push("-");
+      // });
+      // $(".buttonmultiply").click(function(){
+      //   console.log("Button clicks");
+      //   $('#display').append("*");
+      //   equation.push("*");
+      // });
+      // $(".buttondivide").click(function(){
+      //   console.log("Button clicks");
+      //   $('#display').append("/");
+      //   equation.push("/");
+    // });
     // $(".buttonce").click(function(){
     //   console.log("Button clicks");
     //   $('#display').text(" ");
